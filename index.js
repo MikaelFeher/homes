@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
+const cors = require("cors");
 
 const homes = require("./homes");
 
 app.use(express.json());
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.send("Try /homes or /homes/[enter a house id here]/data");
