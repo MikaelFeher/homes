@@ -17,10 +17,10 @@ app.get('/homes', (req, res) => {
 
 app.get('/homes/:id/data', (req, res) => {
     let id = req.params.id;
-    if(!homes.homes[id]) {
+    if(!homes[id]) {
         res.send("Data does not exist");
     } else {
-        res.json(homes.homes[id]);
+        res.json(homes[id]);
     }
 });
 

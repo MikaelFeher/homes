@@ -1,6 +1,6 @@
-let homes = {
-    "hus1" : { 
-        "rooms": [{ 
+module.exports = {
+    "hus1" : {
+    "rooms": [{ 
             "name": "Vardagsrum", 
             "temperature": 21, 
             "humidity": 0.5 
@@ -14,11 +14,10 @@ let homes = {
             "name": "Farstun", 
             "temperature": -3, 
             "humidity": 95 
-        }] 
+        }]
     },
-    
-    "hus2" : { 
-        "rooms": [{ 
+   "hus2" : { 
+    "rooms": [{ 
             "name": "Vardagsrum", 
             "temperature": 25, 
             "humidity": 0.75 
@@ -34,6 +33,6 @@ let homes = {
             "humidity": 34
         }] 
     }
+ 
 };
 
-module.exports = {homes};
