@@ -1,5 +1,6 @@
-module.exports = {
-    "hus1": {
+module.exports = [
+    {
+        "id":"hus1",
         "rooms": [{
             "name": "Vardagsrum",
             "temperature": 21,
@@ -16,7 +17,8 @@ module.exports = {
             "humidity": 95
         }]
     },
-    "hus2": {
+    {
+        "id": "hus2", 
         "rooms": [{
             "name": "Vardagsrum",
             "temperature": 25,
@@ -33,7 +35,8 @@ module.exports = {
             "humidity": 34
         }]
     },
-    "hus3": {
+    {
+        "id": "hus3",
         "rooms": [{
             "name": "Vardagsrum",
             "temperature": 19,
@@ -50,6 +53,4 @@ module.exports = {
             "humidity": 45
         }]
     }
-
-};
-
+]
