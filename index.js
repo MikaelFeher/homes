@@ -12,15 +12,23 @@ app.get('/', (req, res) => {
 });
 
 app.get('/homes', (req, res) => {
-    res.json(homes);
+    res.send(homes);
 });
 
 app.get('/homes/:id/data', (req, res) => {
     let id = req.params.id;
-    if(!homes[id]) {
+    let house = null;
+
+    for (let i = 0; i < homes.length; i++) {
+        if(homes[i].id === id) {
+            house = homes[i];
+        }
+    }
+
+    if(!house) {
         res.send("Data does not exist");
     } else {
-        res.json(homes[id]);
+        res.json(house);
     }
 });
 
