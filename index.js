@@ -19,7 +19,7 @@ app.get('/homes/:id/data', (req, res) => {
     let id = req.params.id;
     let house = null;
 
-    house = homes.filter(home => home.id === id);
+    house = homes.filter(house => house.id === id);
 
     if(!house.length) {
         res.status(404).json({ error: "Data does not exist" });
